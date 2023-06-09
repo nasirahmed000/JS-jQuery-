@@ -1,0 +1,10 @@
+
+
+$(document).ready(function(){
+    
+    $('selector').event(effect)
+    
+});
+
+
+$('selector').event(effect)
