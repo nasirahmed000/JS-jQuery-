@@ -41,4 +41,6 @@ display: none;
     float: left;
     margin: 5px;
   }
-  
+  .select {
+    color: red;
+  }
