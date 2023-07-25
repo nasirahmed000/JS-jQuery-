@@ -108,5 +108,55 @@ $(document).ready(function(){
   });
   $( "#selectable" ).selectable();
   $( "#accordion" ).accordion();
+  var availableTags = [
+    "ActionScript",
+    "AppleScript",
+    "Asp",
+    "BASIC",
+    "C",
+    "C++",
+    "Clojure",
+    "COBOL",
+    "ColdFusion",
+    "Erlang",
+    "Fortran",
+    "Groovy",
+    "Haskell",
+    "Java",
+    "JavaScript",
+    "Lisp",
+    "Perl",
+    "PHP",
+    "Python",
+    "Ruby",
+    "Scala",
+    "Scheme"
+  ];
+  $( "#tags" ).autocomplete({
+    source: availableTags
+  });
+
+  $( "#datepicker" ).datepicker({
+    altField: "#alternate",
+    altFormat: "DD, d MM, yy"
+  });
+
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+});
+
+
+
 
 });
+
+const el = document.querySelector('.counter')
+new Waypoint( {
+    element: el,
+    handler: function() { 
+      counterUp( el ) 
+      this.destroy()
+    },
+    offset: 'bottom-in-view'
+})
