@@ -44,3 +44,14 @@ display: none;
   .select {
     color: red;
   }
+  .jquery{
+    padding-bottom: 100px;
+  }
+  #draggable { width: 150px; height: 150px; padding: 0.5em;background-color: aqua; }
+  #draggabl { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+  #droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
+  #feedback { font-size: 1.4em; }
+  #selectable .ui-selecting { background: #FECA40; }
+  #selectable .ui-selected { background: #F39814; color: white; }
+  #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  #selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }

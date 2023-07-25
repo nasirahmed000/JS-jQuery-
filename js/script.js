@@ -94,4 +94,19 @@ $(document).ready(function(){
   // .trigger( "change" );
 
 
+  $( "#draggabl" ).draggable();
+
+
+  $( "#draggabl" ).draggable();
+  $( "#droppable" ).droppable({
+    drop: function( event, ui ) {
+      $( this )
+        .addClass( "ui-state-highlight" )
+        .find( "p" )
+          .html( "Dropped!" );
+    }
+  });
+  $( "#selectable" ).selectable();
+  $( "#accordion" ).accordion();
+
 });
